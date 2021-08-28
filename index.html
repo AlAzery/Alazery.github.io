@@ -274,7 +274,9 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert('success', response))
+      .then(response =>
+      form.reset();
+      alert('success', response))
       .catch(error => alert('Error!', error.message))
   })
     </script>
