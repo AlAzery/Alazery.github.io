@@ -584,6 +584,7 @@ footer span a:hover{
 }
 .socials li{
     margin: 0 10px;
+    color: white;
 }
 .socials a{
     text-decoration: none;
