@@ -575,6 +575,29 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
