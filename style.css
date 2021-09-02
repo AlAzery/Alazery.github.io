@@ -589,7 +589,7 @@ footer span a:hover{
     text-decoration: none;
     color: white;
 }
-.socials li a{
+.socials li a i{
     font-size: 1.1rem;
     color: white;
     transition: color .4s ease;
