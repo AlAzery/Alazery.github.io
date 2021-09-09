@@ -158,14 +158,14 @@
                     <div class="box">
                         <img src="images/profile-1.jpeg" alt="al azery">
                         <div class="text">AL AZERY</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Al azery it me .</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-2.jpeg" alt="kazura">
                         <div class="text">KAZURA</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Kazura it die .</p>
                     </div>
                 </div>
                 <div class="card">
@@ -227,11 +227,11 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <p id="success"></p>
+                    <p id="success" class="myAlert"></p>
                     <form name="contact-form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required name="name">
+                                <input type="text" placeholder="Name" required name="nama">
                             </div>
                             <div class="field email">
                                 <input type="email" placeholder="Email" required name="email">
@@ -278,18 +278,21 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--javascript-->
     <script src="script.js"></script>
-    <script type="text/javascript" charset="utf-8">
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyxqVjL0xnAmDu6uTwog7nT4BlWVh0l66hOjnek1PLjLb2U8U0gwVSbiZpims0tEryR/exec'
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyyoKOzO2niSXQm42CLaIyqtDkKx-6fCsT0zOe1eSdp_YcdPJZ378Z0_4KvtJRu96CZ/exec'
   const form = document.forms['contact-form']
-  var text = "success";
+  const myAlert = document.getElementById("success");
+  
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response =>
-      form.reset();
-      alert('success', response))
-      .catch(error => alert('Error!', error.message))
+      .then(response => {
+        myAlert;
+        form.reset();
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
   })
-    </script>
+</script>
 </body>
 </html>
