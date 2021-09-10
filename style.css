@@ -536,6 +536,38 @@ section .title::after{
   display: flex;
   align-items: center;
 }
+.contact .right .alert-box{
+  text-align: center;
+	right:0;
+	background-color: rgba(2,166,2,0.859);
+	font-size: 20px;
+	top:10px;
+	padding:9px 35px 9px 9px;
+	color:#ffffff;
+	min-width: 250px;
+	z-index:10;
+	border-radius: 5px;
+}
+.contact .right .alert-box .close-alert{
+	font-size:20px;
+	right:10px;
+	margin-left: 56%;
+	top:15px;
+	cursor: pointer;
+	z-index: 11;
+}
+.contact .right .alert-box.show::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom:0;
+	height: 4px;
+	background-color:rgba(33,236,33,0.796);
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 11;
+	animation: hideMeter 6s linear;
+}
 .right form .button-area button{
   color: #fff;
   display: block;
