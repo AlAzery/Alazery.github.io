@@ -227,7 +227,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <p id="success" class="myAlert"></p>
+                    <p id="success"></p>
                     <form name="contact-form">
                         <div class="fields">
                             <div class="field name">
@@ -281,13 +281,13 @@
     <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyyoKOzO2niSXQm42CLaIyqtDkKx-6fCsT0zOe1eSdp_YcdPJZ378Z0_4KvtJRu96CZ/exec'
   const form = document.forms['contact-form']
-  const myAlert = document.getElementById("success");
+  const myAlert = "SUCCESS"
   
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        myAlert;
+        document.getElementById("success").innerHTML = myAlert;
         form.reset();
         console.log('Success!', response)
       })
