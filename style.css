@@ -536,11 +536,6 @@ section .title::after{
   display: flex;
   align-items: center;
 }
-#success{
-  text-align: center;
-  color: #00f500;
-  font-size: 20px;
-}
 .right form .button-area button{
   color: #fff;
   display: block;
