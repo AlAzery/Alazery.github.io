@@ -536,7 +536,7 @@ section .title::after{
   display: flex;
   align-items: center;
 }
-.contact .contact-content .alert-box{
+.alert-box{
   text-align: center;
 	right:0;
 	background-color: rgba(2,166,2,0.859);
@@ -548,7 +548,7 @@ section .title::after{
 	z-index:10;
 	border-radius: 5px;
 }
-.contact .contact-content .alert-box .close-alert{
+.alert-box .close-alert{
 	font-size:20px;
 	right:10px;
 	margin-left: 56%;
@@ -556,7 +556,7 @@ section .title::after{
 	cursor: pointer;
 	z-index: 11;
 }
-.contact .contact-content .alert-box.show::before{
+.alert-box.show::before{
 	content: '';
 	position: absolute;
 	left:0;
