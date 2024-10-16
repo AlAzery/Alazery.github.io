@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+:root{
+  --black: #222831;
+  --vintage: #211951;
+  --vintage2: #10375C;
+  --teal: #76ABAE;
+  --teal2: #3A6D8C;
+  --teal3: #BCF2F6;
+  --yellow: #FFE700;
+  --blue: #08C2FF;
+}
+
+*{
+  font-family: "Rokkitt", Sans-Serif;
+}
+body{
+  background: var(--vintage);
+}
+.btn-sm-custom {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.card-footer{
+  color: #ff71c4;
+}
+
+.navbar{
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(10px);
+}
+
+.image{
+  margin: 30px 0;
+}
+
+.zery{
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.color-vintage{
+  color: var(--vintage);
+}
+
+.home {
+  color: #FFF5E4;
+  height: 100vh;
+  background: var(--vintage);
+}
+
+#heart{
+  display: inline-block;
+  animation-delay: 1s;
+  animation: heart 0.5s ease-in infinite;
+}
+
+.font-Silkscreen{
+  font-family: "Silkscreen", Sans-Serif;
+}
+
+.card-project{
+  background: var(--black);
+  color: #fff;
+}
+
+.about{
+  color: var(--yellow);
+  height: 100%;
+  background: #F4F6FF;
+}
+
+.footer{
+  background: var(--vintage);
+}
+
+.wave{
+  margin-top: -10rem;
+  position: relative;
+  overflow: hidden;
+}
+.experience{
+  background: #F4F6FF;
+}
+.card-experience{
+  background-color: #FEFFA7;
+}
+.glass{
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+
+}
+.card-custom{
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+}
+#sapa{
+  display: inline-block;
+  animation: wave-hello 1.5s ease infinite;
+  
+}
+
+/* style.css */
+@media only screen and (max-width: 767px) {
+  .home-main{
+    text-align: center;
+  }
+  .wave{
+    margin-top: 0;
+  }
+  .subscribe {
+    display: none !important; /* Sembunyikan tombol subscribe di layar kecil (mobile) */
+  }
+}
+
+@keyframes wave-hello{
+  0%{
+    transform: rotate(20deg);
+  }
+  
+  20%{
+    transform: rotate(0deg);
+  }
+  
+  40%{
+    transform: rotate(20deg);
+  }
+  
+  60%{
+    transform: rotate(0deg);
+  }
+  
+  80%{
+    transform: rotate(20deg);
+  }
+  
+  100%{
+    transform: rotate(20deg);
+  }
+}
+@keyframes heart{
+  0%{
+    font-size: 13px;
+  }
+  
+  50%{
+    font-size: 15px;
+  }
+  
+  100%{
+    font-size: 13px;
+  }
+}
+
+.glitch {
+   position: relative;
+}
+
+.glitch:before {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: -2px;
+   width: 100%;
+   color: 33px;
+   background-color: var(--vintage); 
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-before 3s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 2px;
+   width: 100%;
+   color: 33px;
+   background-color: var(--vintage);
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-after 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-before {
+   0% {
+      clip: rect(61px, 9999px, 52px, 0);
+   }
+   5% {
+      clip: rect(33px, 9999px, 144px, 0);
+   }
+   10% {
+      clip: rect(121px, 9999px, 115px, 0);
+   }
+   15% {
+      clip: rect(144px, 9999px, 162px, 0);
+   }
+   20% {
+      clip: rect(62px, 9999px, 180px, 0);
+   }
+   25% {
+      clip: rect(34px, 9999px, 42px, 0);
+   }
+   30% {
+      clip: rect(147px, 9999px, 179px, 0);
+   }
+   35% {
+      clip: rect(99px, 9999px, 63px, 0);
+   }
+   40% {
+      clip: rect(188px, 9999px, 122px, 0);
+   }
+   45% {
+      clip: rect(154px, 9999px, 14px, 0);
+   }
+   50% {
+      clip: rect(63px, 9999px, 37px, 0);
+   }
+   55% {
+      clip: rect(161px, 9999px, 147px, 0);
+   }
+   60% {
+      clip: rect(109px, 9999px, 175px, 0);
+   }
+   65% {
+      clip: rect(157px, 9999px, 88px, 0);
+   }
+   70% {
+      clip: rect(173px, 9999px, 131px, 0);
+   }
+   75% {
+      clip: rect(62px, 9999px, 70px, 0);
+   }
+   80% {
+      clip: rect(24px, 9999px, 153px, 0);
+   }
+   85% {
+      clip: rect(138px, 9999px, 40px, 0);
+   }
+   90% {
+      clip: rect(79px, 9999px, 136px, 0);
+   }
+   95% {
+      clip: rect(25px, 9999px, 34px, 0);
+   }
+   100% {
+      clip: rect(173px, 9999px, 166px, 0);
+   }
+}
+
+@keyframes noise-after {
+   0% {
+      clip: rect(26px, 9999px, 33px, 0);
+   }
+   5% {
+      clip: rect(140px, 9999px, 198px, 0);
+   }
+   10% {
+      clip: rect(184px, 9999px, 89px, 0);
+   }
+   15% {
+      clip: rect(121px, 9999px, 6px, 0);
+   }
+   20% {
+      clip: rect(181px, 9999px, 99px, 0);
+   }
+   25% {
+      clip: rect(154px, 9999px, 133px, 0);
+   }
+   30% {
+      clip: rect(134px, 9999px, 169px, 0);
+   }
+   35% {
+      clip: rect(26px, 9999px, 187px, 0);
+   }
+   40% {
+      clip: rect(147px, 9999px, 137px, 0);
+   }
+   45% {
+      clip: rect(31px, 9999px, 52px, 0);
+   }
+   50% {
+      clip: rect(191px, 9999px, 109px, 0);
+   }
+   55% {
+      clip: rect(74px, 9999px, 54px, 0);
+   }
+   60% {
+      clip: rect(145px, 9999px, 75px, 0);
+   }
+   65% {
+      clip: rect(153px, 9999px, 198px, 0);
+   }
+   70% {
+      clip: rect(99px, 9999px, 136px, 0);
+   }
+   75% {
+      clip: rect(118px, 9999px, 192px, 0);
+   }
+   80% {
+      clip: rect(1px, 9999px, 83px, 0);
+   }
+   85% {
+      clip: rect(145px, 9999px, 98px, 0);
+   }
+   90% {
+      clip: rect(121px, 9999px, 154px, 0);
+   }
+   95% {
+      clip: rect(156px, 9999px, 44px, 0);
+   }
+   100% {
+      clip: rect(67px, 9999px, 122px, 0);
+   }
+}
